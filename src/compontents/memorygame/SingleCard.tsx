@@ -27,7 +27,7 @@ const SingleCard = ({ card, handleChoice, flipped, disabled }: Props) => {
           onClick={() => {
             if (!disabled) handleChoice(card)
           }}
-          src={'public/react.svg'}
+          src={'react.svg'}
           alt="card back"
           height={50}
           width={100}

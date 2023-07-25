@@ -1,18 +1,18 @@
 import React, { useEffect, useRef, useState } from 'react'
 
 import { ArrowUpCircle } from 'lucide-react'
-// import JavaScriptImage from '../../public/js.png'
-// import ReactImage from '../../public/react-icon.svg'
-// import Html5Logo from '../../public/HTML5_logo.svg'
-// import Css3Logo from '../../public/CSS3_logo.svg'
-// import NextJSLogo from '../../public/Nextjs-logo.svg'
-// import PrismaLogo from '../../public/prisma.svg'
-// //import TypescriptImage from '../../public/TypeScript.png'
-// import SQLLogo from '../../public/sql.svg'
-// import MongoDbLogo from '../../public/mongodb.svg'
-// import Nodejs from '../../public/nodejs.svg'
-// import GitLogo from '../../public/git.svg'
-// import TailwindCssLogo from '../../public/tailwindcss.svg'
+// import JavaScriptImage from '../../js.png'
+// import ReactImage from '../../react-icon.svg'
+// import Html5Logo from '../../HTML5_logo.svg'
+// import Css3Logo from '../../CSS3_logo.svg'
+// import NextJSLogo from '../../Nextjs-logo.svg'
+// import PrismaLogo from '../../prisma.svg'
+// //import TypescriptImage from '../../TypeScript.png'
+// import SQLLogo from '../../sql.svg'
+// import MongoDbLogo from '../../mongodb.svg'
+// import Nodejs from '../../nodejs.svg'
+// import GitLogo from '../../git.svg'
+// import TailwindCssLogo from '../../tailwindcss.svg'
 
 type Props = {}
 //card show = translate-x-0 opacity-100
@@ -20,21 +20,21 @@ const TechSkills = (props: Props) => {
   const itemsEls = useRef<HTMLDivElement[]>([])
   const items = [
     <img
-      src={'public/HTML5_logo.svg'}
+      src={'HTML5_logo.svg'}
       width={350}
       height={350}
       className="mt-20"
       alt="html logo"
     />,
     <img
-      src={'public/CSS3_logo.svg'}
+      src={'CSS3_logo.svg'}
       width={300}
       height={300}
       className="mt-20"
       alt="css logo"
     />,
     <img
-      src={'public/js.png'}
+      src={'js.png'}
       width={350}
       height={350}
       className="mt-20"
@@ -48,56 +48,56 @@ const TechSkills = (props: Props) => {
     //   alt="typescript logo"
     // />,
     <img
-      src={'public/js.png'}
+      src={'js.png'}
       width={350}
       height={350}
       className="mt-20 dark:bg-slate-200 dark:p-8"
       alt="node.js logo"
     />,
     <img
-      src={'public/js.png'}
+      src={'js.png'}
       width={350}
       height={350}
       className="mt-20"
       alt="react logo"
     />,
     <img
-      src={'public/js.png'}
+      src={'js.png'}
       width={350}
       height={350}
       className="mx-4 mt-20 "
       alt="tailwindcss logo"
     />,
     <img
-      src={'public/js.png'}
+      src={'js.png'}
       width={350}
       height={350}
       className="mt-20 "
       alt="next.js logo"
     />,
     <img
-      src={'public/js.png'}
+      src={'js.png'}
       width={250}
       height={250}
       className="mt-20"
       alt="sql logo"
     />,
     <img
-      src={'public/js.png'}
+      src={'js.png'}
       width={350}
       height={350}
       className="mx-4 mt-20 dark:bg-slate-200 dark:p-8"
       alt="prisma logo"
     />,
     <img
-      src={'public/js.png'}
+      src={'js.png'}
       width={350}
       height={350}
       className="mt-20"
       alt="mongodb logo"
     />,
     <img
-      src={'public/js.png'}
+      src={'js.png'}
       width={350}
       height={350}
       className="mt-20 dark:bg-slate-200 dark:p-8"
