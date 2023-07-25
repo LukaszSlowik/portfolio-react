@@ -78,8 +78,7 @@ const Root = (props: Props) => {
 
             <a
               onClick={() => setShow(!show)}
-              href="#"
-              className="absolute left-4 top-5  flex w-8 flex-col  gap-2 bg-black text-white"
+              className="absolute left-4 top-5  flex w-8 cursor-pointer  flex-col gap-2 bg-black text-white"
             >
               {!show ? (
                 <>
