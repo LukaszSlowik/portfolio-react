@@ -7,7 +7,7 @@ import Html5Logo from '@/assets/HTML5_logo.svg'
 import Css3Logo from '@/assets/CSS3_logo.svg'
 import NextJSLogo from '@/assets/Nextjs-logo.svg'
 import PrismaLogo from '@/assets/prisma.svg'
-import TypescriptImage from '@/assets/TypeScript.png'
+//import TypescriptImage from '@/assets/TypeScript.png'
 import SQLLogo from '@/assets/sql.svg'
 import MongoDbLogo from '@/assets/mongodb.svg'
 import Nodejs from '@/assets/nodejs.svg'
@@ -40,13 +40,13 @@ const TechSkills = (props: Props) => {
       className="mt-20"
       alt="javascript logo"
     />,
-    <img
-      src={TypescriptImage}
-      width={350}
-      height={350}
-      className="mt-20"
-      alt="typescript logo"
-    />,
+    // <img
+    //   src={TypescriptImage}
+    //   width={350}
+    //   height={350}
+    //   className="mt-20"
+    //   alt="typescript logo"
+    // />,
     <img
       src={Nodejs}
       width={350}
