@@ -1,5 +1,5 @@
 import React from 'react'
-import my from '@/assets/my.png'
+// import my from '@/assets/my.png'
 import { ArrowDown } from 'lucide-react'
 import {
   Navigate,
@@ -17,7 +17,7 @@ const Home = (props: Props) => {
       <div className="flex flex-wrap justify-center">
         <div className="w-44  px-4  sm:w-52 ">
           <img
-            src={my}
+            src={'public/my.png'}
             alt="my logo"
             className="h-auto max-w-full rounded-full border-none align-middle  shadow-2xl "
           />

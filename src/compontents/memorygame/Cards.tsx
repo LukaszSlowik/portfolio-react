@@ -74,27 +74,27 @@ const Cards = (props: Props) => {
 
   const cardImages = [
     {
-      src: '/src/assets/1.jpg',
+      src: '1.jpg',
       matched: false
     },
     {
-      src: '/src/assets/maja-kochanowska-WGc8axC8K5U-unsplash.jpg',
+      src: 'maja-kochanowska-WGc8axC8K5U-unsplash.jpg',
       matched: false
     },
     {
-      src: '/src/assets/devon-dennis-4BhHIfljLdE-unsplash.jpg',
+      src: 'devon-dennis-4BhHIfljLdE-unsplash.jpg',
       matched: false
     },
     {
-      src: '/src/assets/isaac-wendland-7DCZgKyp8vw-unsplash.jpg',
+      src: 'isaac-wendland-7DCZgKyp8vw-unsplash.jpg',
       matched: false
     },
     {
-      src: '/src/assets/kalen-emsley-Bkci_8qcdvQ-unsplash.jpg',
+      src: 'kalen-emsley-Bkci_8qcdvQ-unsplash.jpg',
       matched: false
     },
     {
-      src: '/src/assets/patrick-hendry-qDBbM9Erwo4-unsplash.jpg',
+      src: 'patrick-hendry-qDBbM9Erwo4-unsplash.jpg',
       matched: false
     }
   ]
