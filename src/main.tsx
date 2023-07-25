@@ -10,7 +10,8 @@ import {
   Link,
   RouterProvider,
   Outlet,
-  redirect
+  redirect,
+  createHashRouter
 } from 'react-router-dom'
 import Contact from './pages/KnowMeBetter'
 import ErrorPage from './routes/Error-page'
@@ -19,7 +20,7 @@ import TechSkills from './pages/TechSkills'
 import Hobbygame from './pages/Hobbygame'
 import KnowMeBetter from './pages/KnowMeBetter'
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/',
     element: <Root />,

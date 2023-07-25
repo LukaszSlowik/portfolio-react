@@ -16,9 +16,9 @@ const ModalWin = ({ open, children, onClose }: Props) => {
           <div className="flex flex-row-reverse">
             <button
               onClick={onClose}
-              className="mt-4  rounded-md bg-blue-600 px-4 py-2 hover:bg-blue-700"
+              className="mt-4  rounded-md bg-blue-600 px-4 py-2 text-white hover:bg-blue-700"
             >
-              close
+              Close
             </button>
           </div>
         </div>

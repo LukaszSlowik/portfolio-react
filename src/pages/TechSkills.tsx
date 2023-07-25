@@ -18,6 +18,15 @@ type Props = {}
 //card show = translate-x-0 opacity-100
 const TechSkills = (props: Props) => {
   const itemsEls = useRef<HTMLDivElement[]>([])
+
+  const handleClickScroll = () => {
+    const element = document.getElementById('topID')
+    if (element) {
+      // 👇 Will scroll smoothly to the top of the next section
+      element.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
+
   const items = [
     <img
       src={'HTML5_logo.svg'}
@@ -40,64 +49,65 @@ const TechSkills = (props: Props) => {
       className="mt-20"
       alt="javascript logo"
     />,
-    // <img
-    //   src={TypescriptImage}
-    //   width={350}
-    //   height={350}
-    //   className="mt-20"
-    //   alt="typescript logo"
-    // />,
     <img
-      src={'js.png'}
+      src={'Typescript_logo_2020.svg'}
+      width={350}
+      height={350}
+      className="mt-20"
+      alt="typescript logo"
+    />,
+    <img
+      src={'Nodejs.svg'}
       width={350}
       height={350}
       className="mt-20 dark:bg-slate-200 dark:p-8"
       alt="node.js logo"
     />,
+
     <img
-      src={'js.png'}
+      src={'react.svg'}
       width={350}
       height={350}
       className="mt-20"
       alt="react logo"
     />,
     <img
-      src={'js.png'}
+      src={'tailwindcss.svg'}
       width={350}
       height={350}
       className="mx-4 mt-20 "
       alt="tailwindcss logo"
     />,
     <img
-      src={'js.png'}
+      src={'Nextjs-logo.svg'}
       width={350}
       height={350}
       className="mt-20 "
       alt="next.js logo"
     />,
     <img
-      src={'js.png'}
+      src={'sql.svg'}
       width={250}
       height={250}
       className="mt-20"
       alt="sql logo"
     />,
     <img
-      src={'js.png'}
+      src={'prisma.svg'}
       width={350}
       height={350}
       className="mx-4 mt-20 dark:bg-slate-200 dark:p-8"
       alt="prisma logo"
     />,
     <img
-      src={'js.png'}
+      src={'mongodb.svg'}
       width={350}
       height={350}
       className="mt-20"
       alt="mongodb logo"
     />,
     <img
-      src={'js.png'}
+      src={'git.svg'}
       width={350}
       height={350}
       className="mt-20 dark:bg-slate-200 dark:p-8"
@@ -107,7 +117,6 @@ const TechSkills = (props: Props) => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
-        console.log(entries)
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             // entry.target.classList.toggle('translate-x-40')
@@ -158,14 +167,14 @@ const TechSkills = (props: Props) => {
         })}
       </div>
       <div className="fixed bottom-24 right-5 z-40 ">
-        <a href="#">
+        <button onClick={handleClickScroll}>
           <ArrowUpCircle
             className="m-4 text-2xl"
             width={48}
             height={48}
             opacity={50}
           />
-        </a>
+        </button>
       </div>
     </div>
   )

@@ -12,13 +12,13 @@ function getWindowSize() {
 
 const Root = (props: Props) => {
   const navigate = useNavigate()
-  const match = useMatch(location.pathname)
+  // const match = useMatch(location.pathname)
   const [show, setShow] = React.useState(false)
 
-  console.log('match:', match)
+  // console.log('match:', match)
+  // console.log(location.pathname)
   const [darkMode, setDarkMode] = useState<boolean | null>(false)
   useLayoutEffect(() => {
-    console.log('state at the begining: ', localStorage.theme)
     if (
       localStorage.theme === 'dark' ||
       (!('theme' in localStorage) &&
@@ -28,20 +28,17 @@ const Root = (props: Props) => {
       localStorage.setItem('theme', 'dark')
       setDarkMode(true)
     } else {
-      console.log('bedzie else')
       document.documentElement.classList.remove('dark')
       localStorage.setItem('theme', 'light')
       setDarkMode(false)
     }
   }, [])
   const handleDarkMode = () => {
-    console.log('state at the begining: ', localStorage.theme)
     if (localStorage.theme === 'dark') {
       document.documentElement.classList.remove('dark')
       localStorage.setItem('theme', 'light')
       setDarkMode(false)
     } else {
-      console.log('bedzie else')
       document.documentElement.classList.add('dark')
       localStorage.setItem('theme', 'dark')
       setDarkMode(true)
@@ -50,7 +47,10 @@ const Root = (props: Props) => {
 
   return (
     <>
-      <div className=" min-h-screen   text-black dark:bg-slate-800 dark:text-white">
+      <div
+        className=" min-h-screen   text-black dark:bg-slate-800 dark:text-white "
+        id="topID"
+      >
         <nav className="flex   w-full  flex-col  ">
           <div className="flex h-16 flex-row-reverse items-center bg-black text-white">
             <button onClick={handleDarkMode}>
@@ -64,16 +64,17 @@ const Root = (props: Props) => {
             <span className=" mr-4 text-center text-2xl ">
               Lukasz's Portfolio
             </span>
-            {match?.pathname !== '/KnowMeBetter' &&
-              match?.pathname !== '/home' &&
-              match?.pathname !== '/' && (
-                <span
-                  onClick={() => navigate('KnowMeBetter')}
-                  className="ml-20 mr-auto hidden  cursor-pointer  p-4 text-center text-2xl hover:bg-slate-600 sm:block"
-                >
-                  Know me better
-                </span>
-              )}
+            {/* {match?.pathname !== '#/KnowMeBetter' &&
+              match?.pathname !== '#/home' &&
+              match?.pathname !== '/' && ( */}
+            <span
+              onClick={() => navigate('KnowMeBetter')}
+              className="ml-20 mr-auto hidden  cursor-pointer  p-4 text-center text-2xl hover:bg-slate-600 sm:block"
+            >
+              Know me better
+            </span>
+            {/* ) */}
+            {/* } */}
 
             <a
               onClick={() => setShow(!show)}

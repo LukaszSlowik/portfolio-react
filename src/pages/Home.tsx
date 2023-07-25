@@ -33,7 +33,7 @@ const Home = (props: Props) => {
         </div>
 
         <button
-          onClick={() => navigate('/KnowMeBetter')}
+          onClick={() => navigate('KnowMeBetter')}
           className="m-4 rounded-md bg-slate-400 px-4 py-2 hover:bg-slate-500"
         >
           Let's start
