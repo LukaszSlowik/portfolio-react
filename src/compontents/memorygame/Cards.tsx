@@ -74,27 +74,27 @@ const Cards = (props: Props) => {
 
   const cardImages = [
     {
-      src: '/src/assets/game/alejandra-ezquerro-74fo_s_wHl8-unsplash.jpg',
+      src: '/src/assets/1.jpg',
       matched: false
     },
     {
-      src: '/src/assets/game/maja-kochanowska-WGc8axC8K5U-unsplash.jpg',
+      src: '/src/assets/maja-kochanowska-WGc8axC8K5U-unsplash.jpg',
       matched: false
     },
     {
-      src: '/src/assets/game/devon-dennis-4BhHIfljLdE-unsplash.jpg',
+      src: '/src/assets/devon-dennis-4BhHIfljLdE-unsplash.jpg',
       matched: false
     },
     {
-      src: '/src/assets/game/isaac-wendland-7DCZgKyp8vw-unsplash.jpg',
+      src: '/src/assets/isaac-wendland-7DCZgKyp8vw-unsplash.jpg',
       matched: false
     },
     {
-      src: '/src/assets/game/kalen-emsley-Bkci_8qcdvQ-unsplash.jpg',
+      src: '/src/assets/kalen-emsley-Bkci_8qcdvQ-unsplash.jpg',
       matched: false
     },
     {
-      src: '/src/assets/game/patrick-hendry-qDBbM9Erwo4-unsplash.jpg',
+      src: '/src/assets/patrick-hendry-qDBbM9Erwo4-unsplash.jpg',
       matched: false
     }
   ]

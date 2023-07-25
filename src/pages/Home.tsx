@@ -24,7 +24,8 @@ const Home = (props: Props) => {
         </div>
       </div>
       <div className=" flex flex-col items-center justify-center  py-9">
-        <h1 className=" text-xl"> Welcome to my portfolio.</h1>
+        <h1 className=" text-xl font-semibold"> Hi, I'm Lukasz</h1>
+
         <p className="">I'm a web developer.</p>
         <p className="">Click the button to know me better</p>
         <div className="mt-4   animate-bounce rounded-full bg-black text-white">

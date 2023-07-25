@@ -12,16 +12,16 @@ const KnowMeBetter = (props: Props) => {
       </h1>
       <div className="grid max-w-xl grid-cols-1 justify-center gap-5 sm:m-auto sm:grid-cols-2">
         <button
-          onClick={() => navigate('/hobbygame')}
-          className=" mx-8 h-60 rounded-xl bg-slate-200 p-4 text-center text-3xl font-semibold shadow-xl hover:bg-slate-300 dark:bg-slate-900 dark:hover:bg-slate-700"
-        >
-          Hobby
-        </button>
-        <button
           onClick={() => navigate('/techskills')}
           className=" mx-8 h-60 rounded-xl bg-slate-200 p-4 text-center text-3xl font-semibold shadow-xl hover:bg-slate-300 dark:bg-slate-900 dark:hover:bg-slate-700"
         >
           Tech Skills
+        </button>
+        <button
+          onClick={() => navigate('/hobbygame')}
+          className=" mx-8 h-60 rounded-xl bg-slate-200 p-4 text-center text-3xl font-semibold shadow-xl hover:bg-slate-300 dark:bg-slate-900 dark:hover:bg-slate-700"
+        >
+          Hobby
         </button>
       </div>
     </div>
