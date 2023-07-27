@@ -3,6 +3,7 @@ import React, { useCallback, useEffect, useLayoutEffect, useState } from 'react'
 import { Outlet, NavLink, useNavigate, useMatch } from 'react-router-dom'
 import { Moon, Sun } from 'lucide-react'
 import Footer from '@/pages/Footer'
+//import { Transition } from '@tailwindui/react'
 type Props = {}
 
 function getWindowSize() {
@@ -93,8 +94,8 @@ const Root = (props: Props) => {
           </div>
 
           <ul
-            className={`   fixed top-4  z-20  pt-20 ${
-              show ? 'flex' : 'hidden'
+            className={`  absolute top-16 z-20    overflow-hidden   transition duration-150 ease-linear  ${
+              show ? '  flex   translate-y-0   ' : 'h-0 -translate-y-32  '
             }  w-2/3 flex-col   bg-black text-slate-50 sm:w-1/3 `}
           >
             <NavLink

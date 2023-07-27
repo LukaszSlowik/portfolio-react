@@ -123,7 +123,8 @@ const Cards = (props: Props) => {
       </button>
       <ModalWin open={won} onClose={() => setWon(false)}>
         <div>
-          <p>Gratulation !!!</p> <p>You won ! 🥇</p>
+          <p className="text-center">Congratulations !!!</p>{' '}
+          <p className="text-center">You won ! 🥇</p>
         </div>
       </ModalWin>
       <div className="mt-2 grid min-h-[300px] min-w-[300px] grid-cols-2 gap-3 rounded-md p-6 sm:grid-cols-3 md:grid-cols-4 ">

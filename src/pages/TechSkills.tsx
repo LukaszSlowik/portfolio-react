@@ -132,7 +132,7 @@ const TechSkills = (props: Props) => {
           }
         })
       },
-      { threshold: 0.5, rootMargin: '-100px' }
+      { threshold: 0.5 }
     )
     itemsEls.current.forEach((item) => observer.observe(item))
     return () => {
@@ -147,9 +147,9 @@ const TechSkills = (props: Props) => {
   }, [itemsEls])
 
   return (
-    <div className="  flex h-full  flex-col ">
+    <div className="  flex h-full  flex-col overflow-x-hidden">
       <div className=" mb-20 flex flex-col items-center gap-1">
-        <h1 className="mb-10 text-center text-5xl">
+        <h1 className="mb-2 text-center text-5xl">
           {' '}
           Scroll to see my tech skills
         </h1>
@@ -159,17 +159,17 @@ const TechSkills = (props: Props) => {
             <div
               ref={getRef as any}
               key={index}
-              className=" mt-10 translate-x-40  opacity-0 transition-all duration-1000 ease-in-out "
+              className=" mt-5  translate-x-40 opacity-0 transition-all duration-1000 ease-in-out "
             >
               {item}
             </div>
           )
         })}
       </div>
-      <div className="fixed bottom-24 right-5 z-40 ">
+      <div className="fixed bottom-24 right-1 z-40 sm:right-5">
         <button onClick={handleClickScroll}>
           <ArrowUpCircle
-            className="m-4 text-2xl"
+            className="m-2 text-2xl"
             width={48}
             height={48}
             opacity={50}

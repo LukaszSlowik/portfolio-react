@@ -19,7 +19,7 @@ const KnowMeBetter = (props: Props) => {
         </button>
         <button
           onClick={() => navigate('/hobbygame')}
-          className=" mx-8 h-60 rounded-xl bg-slate-200 p-4 text-center text-3xl font-semibold shadow-xl hover:bg-slate-300 dark:bg-slate-900 dark:hover:bg-slate-700"
+          className=" mx-8 mb-8 h-60 rounded-xl bg-slate-200 p-4 text-center text-3xl font-semibold shadow-xl hover:bg-slate-300 dark:bg-slate-900 dark:hover:bg-slate-700"
         >
           Hobby
         </button>
