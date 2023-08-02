@@ -19,7 +19,7 @@ const SingleCard = ({ card, handleChoice, flipped, disabled }: Props) => {
           alt="card front"
           height={50}
           width={100}
-          className={` duration-400   aspect-video h-28  w-full  rounded-md   transition-all ease-in dark:border-white  dark:bg-slate-200 ${
+          className={` duration-400   aspect-video h-28   w-full  rounded-md   transition-all ease-in dark:border-white  dark:bg-slate-200 ${
             flipped ? 'relative block ' : 'absolute hidden rotate-90'
           }`}
         />
