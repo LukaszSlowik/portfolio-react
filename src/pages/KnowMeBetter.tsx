@@ -10,7 +10,7 @@ const KnowMeBetter = (props: Props) => {
       <h1 className="m-8 text-center text-2xl">
         Choose one of the topics below
       </h1>
-      <div className="grid max-w-xl grid-cols-1 justify-center gap-5 sm:m-auto sm:grid-cols-2">
+      <div className="grid max-w-4xl grid-cols-1 justify-center gap-5 sm:m-auto sm:grid-cols-3">
         <button
           onClick={() => navigate('/techskills')}
           className=" mx-8 h-60 rounded-xl bg-slate-200 p-4 text-center text-3xl font-semibold shadow-xl hover:bg-slate-300 dark:bg-slate-900 dark:hover:bg-slate-700"
@@ -22,6 +22,12 @@ const KnowMeBetter = (props: Props) => {
           className=" mx-8 mb-8 h-60 rounded-xl bg-slate-200 p-4 text-center text-3xl font-semibold shadow-xl hover:bg-slate-300 dark:bg-slate-900 dark:hover:bg-slate-700"
         >
           Hobby
+        </button>
+        <button
+          onClick={() => navigate('/myprojects')}
+          className=" mx-8 mb-8 h-60 rounded-xl bg-slate-200 p-4 text-center text-3xl font-semibold shadow-xl hover:bg-slate-300 dark:bg-slate-900 dark:hover:bg-slate-700"
+        >
+          My Projects
         </button>
       </div>
     </div>

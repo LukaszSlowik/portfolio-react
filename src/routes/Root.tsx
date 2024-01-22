@@ -52,7 +52,7 @@ const Root = (props: Props) => {
         className=" min-h-screen   text-black dark:bg-slate-800 dark:text-white "
         id="topID"
       >
-        <nav className="flex   w-full  flex-col  ">
+        <nav className="   flex  w-full flex-col ">
           <div className="flex h-16 flex-row-reverse items-center bg-black text-white">
             <button onClick={handleDarkMode}>
               {!darkMode ? (
@@ -95,7 +95,7 @@ const Root = (props: Props) => {
 
           <ul
             className={`  absolute top-16 z-20    overflow-hidden   transition duration-150 ease-linear  ${
-              show ? '  flex   translate-y-0   ' : 'h-0 -translate-y-32  '
+              show ? '  flex   translate-y-0   ' : 'h-0 -translate-y-32 '
             }  w-2/3 flex-col   bg-black text-slate-50 sm:w-1/3 `}
           >
             <NavLink
@@ -105,6 +105,7 @@ const Root = (props: Props) => {
             >
               Home
             </NavLink>
+
             <NavLink
               onClick={() => setShow(!show)}
               className=" border-border dark:border-border-dark border-t p-4 opacity-50  hover:opacity-100 "
@@ -125,6 +126,13 @@ const Root = (props: Props) => {
               to={`hobbygame`}
             >
               Hobby
+            </NavLink>
+            <NavLink
+              onClick={() => setShow(!show)}
+              className=" border-border dark:border-border-dark border-t p-4 opacity-50  hover:opacity-100 "
+              to={`myprojects`}
+            >
+              My Projects
             </NavLink>
           </ul>
         </nav>

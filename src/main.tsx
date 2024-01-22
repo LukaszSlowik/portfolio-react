@@ -19,6 +19,7 @@ import Home from './pages/Home'
 import TechSkills from './pages/TechSkills'
 import Hobbygame from './pages/Hobbygame'
 import KnowMeBetter from './pages/KnowMeBetter'
+import MyProjects from './pages/MyProjects'
 
 const router = createHashRouter([
   {
@@ -46,6 +47,10 @@ const router = createHashRouter([
       {
         path: '/hobbygame',
         element: <Hobbygame />
+      },
+      {
+        path: '/myprojects',
+        element: <MyProjects />
       }
     ]
   }
